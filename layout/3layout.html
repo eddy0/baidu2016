@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三栏布局</title>
+    <style>
+        
+        body {
+            font-family: -apple-system,  sans-serif;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            background-color: #999;
+            padding: 20px;
+        }
+       
+        .left {
+            float: left;
+            width: 200px;
+            margin-right: 20px;
+          
+            background-color: #fff;
+        }
+        
+        .main {
+            float: left;
+            width: calc(100% - 240px - 120px);
+            word-break: break-all;
+    
+            background-color: yellow;
+            height: inherit;
+        }
+        .right {
+            float: right;
+            width: 120px;
+            padding: 20px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        
+        .clearfix:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .logo-wrapper {
+            margin: 20px;
+        }
+
+        .logo {
+            display: inline-block;
+            background-color: #999;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            border: 1px solid #000;
+    
+        }
+        
+        .name {
+            display: inline-block;
+            vertical-align: top;
+            margin-left:20px;
+        }
+        
+        .right > .logo + .logo {
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container clearfix">
+    <div class="left">
+        <div class="logo-wrapper">
+            <span class="logo">LOGO</span>
+            <div class="name">名称</div>
+        </div>
+    </div>
+    <div class="main">
+    asdfg jjffas ewerwe sffa hhh, asdfg jjffas ewerwe sffa hhh  asdfg jjffas ewerwe sffa hhh asdfg jjffas ewerwe sffa hhhasdfg jjffas ewerwe sffa hhh asdfg jjffas ewerwe sffa hhh
+    </div>
+    <div class="right">
+        <span class="logo">LOGO</span>
+        <span class="logo">LOGO</span>
+        <span class="logo">LOGO</span>
+        <span class="logo">LOGO</span>
+        <span class="logo">LOGO</span>
+    
+    </div>
+</div>
+</body>
+</html>
