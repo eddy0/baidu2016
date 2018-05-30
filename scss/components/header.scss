@@ -1,0 +1,110 @@
+@mixin center {
+  display: flex;
+  align-items: center;
+}
+
+html {
+  font-size: 100px;
+  line-height: 1;
+}
+
+body {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.box {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  //border: 1px solid #000;
+  height: 0.58rem;
+  padding: 0 0.60rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    @include center;
+    font-size: 0.21rem;
+  }
+
+  &__nav {
+    margin-left: auto;
+
+  }
+
+  &__authen {
+    margin-right: 5px;
+
+  }
+
+}
+
+.logo {
+  @include center();
+
+  &__img{
+    width: 30px;
+    height: 30px;
+  }
+
+  &__name {
+    color: #393a3a;
+    margin-left: 5px;
+
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    font-size: 0.8em;
+    line-height: 0.20rem;
+  }
+
+  &__item {
+    position: relative;
+    color: #999;
+    margin: 0  0.24rem;
+    padding: 0.2rem 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #e74f4d;
+      transition: width 0.2s linear;
+    }
+
+    &:hover, &--active {
+      color: #e74f4d;
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &:hover , &--active {
+      color: #e74f4d;
+
+
+
+    }
+  }
+}
