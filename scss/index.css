@@ -17,45 +17,45 @@ ul {
     margin: 0 auto;
     max-width: 1280px; } }
 
-.header {
+header.header {
   height: 0.58rem;
   padding: 0 0.60rem;
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .header__logo {
+  header.header__logo {
     display: flex;
     align-items: center;
     font-size: 0.21rem; }
-  .header__nav {
+  header.header__nav {
     margin-left: auto; }
-  .header__authen {
+  header.header__authen {
     margin-right: 5px; }
 
-.logo {
+header .logo {
   display: flex;
   align-items: center; }
-  .logo__img {
+  header .logo__img {
     width: 30px;
     height: 30px; }
-  .logo__name {
+  header .logo__name {
     color: #393a3a;
     margin-left: 5px; }
 
-.nav {
+header .nav {
   display: flex;
   align-items: center; }
-  .nav__link {
+  header .nav__link {
     font-size: 0.8em;
     line-height: 0.20rem; }
-  .nav__item {
+  header .nav__item {
     position: relative;
     color: #999;
     margin: 0  0.24rem;
     padding: 0.2rem 0;
     width: 0.52rem;
     text-align: center; }
-    .nav__item::after {
+    header .nav__item::after {
       content: '';
       position: absolute;
       width: 0;
@@ -65,24 +65,24 @@ ul {
       transform: translateX(-50%);
       background-color: #e74f4d;
       transition: width 0.2s linear; }
-    .nav__item:hover {
+    header .nav__item:hover {
       color: #e74f4d; }
-      .nav__item:hover::after {
+      header .nav__item:hover::after {
         width: 100%; }
-    .nav__item:hover, .nav__item--active {
+    header .nav__item:hover, header .nav__item--active {
       color: #e74f4d; }
 
-.header__authen {
+header .header__authen {
   display: flex;
   align-items: center;
   cursor: pointer; }
-  .header__authen img {
+  header .header__authen img {
     margin-right: 5px; }
-  .header__authen span {
+  header .header__authen span {
     font-size: 0.14rem;
     line-height: 17px;
     color: #999; }
-    .header__authen span:hover {
+    header .header__authen span:hover {
       color: #e74f4d; }
 
 .banner {
@@ -119,5 +119,65 @@ ul {
       font-size: 0.3rem; }
       .banner__detail .btn--red:hover {
         background-color: #ed7b7a; }
+
+.introduce__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+.introduce__item {
+  max-width: 1.5rem;
+  margin-top: 0.45rem;
+  margin-bottom: 0.6rem; }
+  .introduce__item .item__img {
+    margin: auto; }
+  .introduce__item .item__text {
+    font-size: 0.14rem;
+    margin: 0.18rem 0;
+    color: #999999;
+    text-align: center;
+    line-height: 1.3; }
+  .introduce__item:nth-child(1) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat 0 0;
+    width: 42px;
+    height: 42px; }
+  .introduce__item:nth-child(1) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat 0 0;
+    width: 42px;
+    height: 42px; }
+  .introduce__item:nth-child(2) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat -58px 0;
+    width: 42px;
+    height: 42px; }
+  .introduce__item:nth-child(3) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat -104px -1px;
+    width: 35px;
+    height: 42px; }
+  .introduce__item:nth-child(4) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat -152px 0;
+    width: 41px;
+    height: 40px; }
+
+.activity .header {
+  background-color: #ededed;
+  position: relative; }
+  .activity .header__img {
+    background-image: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/logo.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 595px;
+    top: 0;
+    width: 91px;
+    height: 92px;
+    z-index: 37; }
+  .activity .header h2 {
+    font-size: 53.586px;
+    font-family: "SimHei";
+    color: rgba(50, 51, 51, 0.502);
+    line-height: 1.056;
+    text-align: center;
+    position: absolute;
+    left: 211.782px;
+    top: 0px;
+    z-index: 38; }
 
 /*# sourceMappingURL=index.css.map */

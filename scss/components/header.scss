@@ -28,7 +28,7 @@ ul {
   }
 }
 
-.header {
+header.header {
   //border: 1px solid #000;
   height: 0.58rem;
   padding: 0 0.60rem;
@@ -53,7 +53,7 @@ ul {
 
 }
 
-.logo {
+header .logo {
   @include center();
 
   &__img{
@@ -68,7 +68,7 @@ ul {
   }
 }
 
-.nav {
+header .nav {
   display: flex;
   align-items: center;
 
@@ -112,7 +112,7 @@ ul {
   }
 }
 
-.header__authen {
+header .header__authen {
   @include center;
   cursor: pointer;
   & img {
@@ -127,8 +127,5 @@ ul {
     &:hover {
       color: #e74f4d;
     }
-
-
   }
-
 }

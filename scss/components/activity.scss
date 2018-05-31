@@ -1,0 +1,40 @@
+.activity {
+  &__header {
+
+  }
+}
+
+.activity .header {
+  background-color: #ededed;
+  position: relative;
+
+  &__img {
+    background-image: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/logo.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 595px;
+    top: 0;
+    width: 91px;
+    height: 92px;
+    z-index: 37;
+  }
+
+  h2 {
+    font-size: 53.586px;
+    font-family: "SimHei";
+    color: rgba( 50, 51, 51, 0.502 );
+    line-height: 1.056;
+    text-align: center;
+    position: absolute;
+    left: 211.782px;
+    top: 0px;
+    z-index: 38;
+  }
+
+
+
+
+}
+
+
+
