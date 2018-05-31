@@ -1,0 +1,320 @@
+html {
+  font-size: 100px;
+  line-height: 1; }
+
+body {
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+p {
+  margin: 0.05rem; }
+
+img {
+  vertical-align: top; }
+
+ul {
+  list-style: none; }
+
+@media screen and (min-width: 900px) {
+  .box {
+    margin: 0 auto;
+    max-width: 1280px; } }
+
+header.header {
+  height: 0.58rem;
+  padding: 0 0.60rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header.header__logo {
+    display: flex;
+    align-items: center;
+    font-size: 0.21rem; }
+  header.header__nav {
+    margin-left: auto; }
+  header.header__authen {
+    margin-right: 5px; }
+
+header .logo {
+  display: flex;
+  align-items: center; }
+  header .logo__img {
+    width: 30px;
+    height: 30px; }
+  header .logo__name {
+    color: #393a3a;
+    margin-left: 5px; }
+
+header .nav {
+  display: flex;
+  align-items: center; }
+  header .nav__link {
+    font-size: 0.8em;
+    line-height: 0.20rem; }
+  header .nav__item {
+    position: relative;
+    color: #999;
+    margin: 0  0.24rem;
+    padding: 0.2rem 0;
+    width: 0.52rem;
+    text-align: center; }
+    header .nav__item::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #e74f4d;
+      transition: width 0.2s linear; }
+    header .nav__item:hover {
+      color: #e74f4d; }
+      header .nav__item:hover::after {
+        width: 100%; }
+    header .nav__item:hover, header .nav__item--active {
+      color: #e74f4d; }
+
+header .header__authen {
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  header .header__authen img {
+    margin-right: 5px; }
+  header .header__authen span {
+    font-size: 0.14rem;
+    line-height: 17px;
+    color: #999; }
+    header .header__authen span:hover {
+      color: #e74f4d; }
+
+.banner {
+  background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/banner.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 6.91rem;
+  position: relative; }
+  .banner__overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); }
+  .banner__detail {
+    position: absolute;
+    left: 1.17rem;
+    top: 1.17rem;
+    color: #fff; }
+    .banner__detail h2 {
+      font-family: "Microsoft YaHei";
+      font-size: 0.60rem; }
+    .banner__detail p {
+      font-size: 0.21rem;
+      margin-top: 0.16rem; }
+    .banner__detail .btn {
+      height: 0.64rem;
+      width: 3.33rem;
+      margin-top: 0.4rem;
+      border: 0;
+      padding: 0.1rem 1rem;
+      cursor: pointer; }
+    .banner__detail .btn--red {
+      background-color: #e74f4d;
+      color: #fff;
+      font-size: 0.3rem; }
+      .banner__detail .btn--red:hover {
+        background-color: #ed7b7a; }
+
+.introduce__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+.introduce__item {
+  max-width: 1.5rem;
+  margin-top: 0.45rem;
+  margin-bottom: 0.6rem; }
+  .introduce__item .item__img {
+    margin: auto; }
+  .introduce__item .item__text {
+    font-size: 0.14rem;
+    margin: 0.18rem 0;
+    color: #999999;
+    text-align: center;
+    line-height: 1.3; }
+  .introduce__item:nth-child(1) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat 0 0;
+    width: 42px;
+    height: 42px; }
+  .introduce__item:nth-child(1) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat 0 0;
+    width: 42px;
+    height: 42px; }
+  .introduce__item:nth-child(2) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat -58px 0;
+    width: 42px;
+    height: 42px; }
+  .introduce__item:nth-child(3) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat -104px -1px;
+    width: 35px;
+    height: 42px; }
+  .introduce__item:nth-child(4) .item__img {
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/icon.png") no-repeat -152px 0;
+    width: 41px;
+    height: 40px; }
+
+.activity {
+  background-color: #ededed; }
+  .activity__header {
+    position: relative;
+    padding: 0.8rem 0; }
+  .activity__map {
+    height: 3.4rem;
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/map.jpg") no-repeat;
+    background-size: cover;
+    padding: 0.4rem;
+    position: relative; }
+  .activity__gallery {
+    padding: 1rem; }
+  .activity .header__img {
+    background-image: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/activity_logo.png");
+    background-repeat: no-repeat;
+    width: 91px;
+    height: 91px;
+    margin: 0 auto; }
+  .activity .header h2 {
+    font-size: 0.50rem;
+    color: rgba(50, 51, 51, 0.502);
+    text-align: center;
+    z-index: 38; }
+  .activity .map__overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1; }
+  .activity .map__text {
+    color: #fff;
+    text-align: center;
+    z-index: 10; }
+  .activity .map__search {
+    z-index: 111;
+    margin-top: 0.5rem; }
+  .activity .gallery__list {
+    display: flex;
+    align-items: center; }
+  .activity .gallery__item {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 0.2rem; }
+    .activity .gallery__item img {
+      vertical-align: top;
+      border: 4px solid #fff; }
+    .activity .gallery__item div:nth-child(1) {
+      color: #333;
+      margin: 5px 0;
+      font-size: 0.14rem; }
+    .activity .gallery__item div:nth-child(2) {
+      color: #999;
+      font-size: 0.12rem; }
+
+.time__introduce {
+  display: flex; }
+.time .intro__left {
+  width: 8.51rem;
+  position: relative; }
+.time .intro__overlay {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.3rem;
+  text-align: center; }
+  .time .intro__overlay .title {
+    font-size: 0.5rem; }
+  .time .intro__overlay .sub-title {
+    font-size: 1.57rem; }
+  .time .intro__overlay .feed {
+    margin-top: 0.2rem;
+    font-size: 0.22rem; }
+  .time .intro__overlay .data {
+    font-size: 0.22rem; }
+.time .btn--more {
+  display: inline-block;
+  margin-top: 0.32rem;
+  font-size: 0.12rem;
+  padding: 0.5em 2.5em;
+  border: 1px solid #e74f4d;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #e74f4d; }
+.time .intro__right {
+  text-align: center;
+  position: relative;
+  padding: 1.68rem 0.97rem 0; }
+  .time .intro__right:before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 20px solid;
+    border-color: transparent #fff transparent transparent; }
+  .time .intro__right .content .title {
+    font-size: 0.14rem;
+    line-height: 0.3rem; }
+  .time .intro__right .content p {
+    max-width: 4.9rem;
+    text-align: left;
+    color: #999;
+    font-size: 0.12rem;
+    line-height: 2.6; }
+  .time .intro__right .pointer {
+    margin: 0.7rem;
+    display: flex;
+    justify-content: center; }
+    .time .intro__right .pointer__indicator {
+      margin: 10px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #ccc; }
+      .time .intro__right .pointer__indicator--active {
+        background-color: #333; }
+
+.time {
+  background-color: #fff;
+  height: 5.21rem; }
+  .time__more-activity {
+    display: flex; }
+    .time__more-activity > div {
+      width: calc(100% /3); }
+  .time .activities .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333; }
+  .time .activities .activities-one {
+    background-color: #e74f4d;
+    color: #fff; }
+    .time .activities .activities-one .btn--more {
+      color: #fff;
+      border-color: #fff; }
+  .time .activities .activities-last {
+    position: relative;
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/time2.jpg") no-repeat;
+    background-size: cover;
+    height: 5.21rem; }
+    .time .activities .activities-last:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 20px solid;
+      border-color: transparent transparent transparent #fff; }
+
+/*# sourceMappingURL=index.css.map */
