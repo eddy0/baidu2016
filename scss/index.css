@@ -157,22 +157,61 @@ header .header__authen {
     width: 41px;
     height: 40px; }
 
-.activity__header {
-  background-color: #ededed;
-  position: relative;
-  padding: 0.8rem 0; }
-.activity__map {
-  height: 3.4rem; }
-.activity .header__img {
-  background-image: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/activity_logo.png");
-  background-repeat: no-repeat;
-  width: 91px;
-  height: 91px;
-  margin: 0 auto; }
-.activity .header h2 {
-  font-size: 0.50rem;
-  color: rgba(50, 51, 51, 0.502);
-  text-align: center;
-  z-index: 38; }
+.activity {
+  background-color: #ededed; }
+  .activity__header {
+    position: relative;
+    padding: 0.8rem 0; }
+  .activity__map {
+    height: 3.4rem;
+    background: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/map.jpg") no-repeat;
+    background-size: cover;
+    padding: 0.4rem;
+    position: relative; }
+  .activity__gallery {
+    padding: 1rem; }
+  .activity .header__img {
+    background-image: url("https://raw.githubusercontent.com/eddy0/baidu2016/theme/img/activity_logo.png");
+    background-repeat: no-repeat;
+    width: 91px;
+    height: 91px;
+    margin: 0 auto; }
+  .activity .header h2 {
+    font-size: 0.50rem;
+    color: rgba(50, 51, 51, 0.502);
+    text-align: center;
+    z-index: 38; }
+  .activity .map__overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1; }
+  .activity .map__text {
+    color: #fff;
+    text-align: center;
+    z-index: 10; }
+  .activity .map__search {
+    z-index: 111;
+    margin-top: 0.5rem; }
+  .activity .gallery__list {
+    display: flex;
+    align-items: center; }
+  .activity .gallery__item {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 0.2rem; }
+    .activity .gallery__item img {
+      vertical-align: top;
+      border: 4px solid #fff; }
+    .activity .gallery__item div:nth-child(1) {
+      color: #333;
+      margin: 5px 0;
+      font-size: 0.14rem; }
+    .activity .gallery__item div:nth-child(2) {
+      color: #999;
+      font-size: 0.12rem; }
 
 /*# sourceMappingURL=index.css.map */
